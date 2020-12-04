@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1604531656 source:c:\gnuwin32\analisadorsemantico\estruturasdeponteiros\arvore_binaria.c
+
+1604531622 source:c:\gnuwin32\analisadorsemantico\estruturasdeponteiros\fila.c
+
+1604531669 source:c:\gnuwin32\analisadorsemantico\estruturasdeponteiros\grafo.c
+
+1604531643 source:c:\gnuwin32\analisadorsemantico\estruturasdeponteiros\lista_duplamente_encadeada.c
+
+1604532669 source:c:\gnuwin32\analisadorsemantico\estruturasdeponteiros\pilha.c
+	<stdio.h>
+	<stdlib.h>
+
