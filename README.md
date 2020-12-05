@@ -52,5 +52,27 @@ Conta com as seguintes funções:
 - ShowTheLine(fila (*struct Line**)): Imprime na tela todos os elementos da fila em sequência.
 
 ### - Lista Duplamente Encadeada
+Nessa estrutura, os dados serão alocados de forma crescente e poderão ser retirados de duas formas, escolher uma posição ou um valor para retornar. 
+
+Composto por duas *structs*:
+- *Block*: Contém o valor do elemento (*float*) e dois ponteiros um para o bloco antecessor e outro para o sucessor.
+- *List*: Simboliza a lista como um todo. Contém o tamanho dela e 3 (três) ponteiros, um aponta para o inicio da lista (*front*), o outro para final (*ending*) e o terceiro aponta para o último elemento inserido (*lastBlock*).
+
+Conta com as seguintes funções:
+- Initial(lista (*struct List**)): Incia a lista com tamanho 0 (zero) e todos os ponteiros apontando para *null*.
+- GoRight(depois (*struct Block**), meio (*struct Block*)): Essa função foi implementada usando recursividade e tem o *lastBlock* como ponto de partida. Percorre a lista da esquerda para a direita até atingir a condição que o valor do "depois" é menor que o do "meio", o "meio" recebe o "depois como antecessor e os dois passam a ter o mesmo sucessor. Feito isso, o sucessor do "depois" começa a ser o "meio".
+
+- GoLeft(depois (*struct Block**), meio (*struct Block**)): Percorre a lista da direita para a esquerda. Essa função foi implementada usando recursividade e tem o *lastBlock* como ponto de partida.
+- Insertion(lista (*struct List**), numero (*float*)): Aloca uma variável do tipo *Block** e seu valor recebe o algarismo passado como parâmetro. Feito isso, compara o o numero dado com valor do *lastBlock**. Caso seja menor ou igual, chama o GoLeft() e caso seja maior chama o GoRight().
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+
 ### - Arvore Binaria
 ### - Arvore AVL (em desenvolvimento)
